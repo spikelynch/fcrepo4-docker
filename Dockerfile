@@ -1,9 +1,9 @@
 FROM ubuntu:14.04
 
-MAINTAINER Yinlin Chen "ylchen@vt.edu"
+MAINTAINER Mike Lynch "Michael.Lynch@uts.edu.au"
 
-ARG FedoraConfig=
-ARG ModeshapeConfig=file-simple
+ARG FedoraConfig=webac-
+ARG ModeshapeConfig=servlet-auth
 
 # Install essential packages
 RUN apt-get update && apt-get install -y \
